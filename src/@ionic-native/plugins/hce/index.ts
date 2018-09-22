@@ -42,6 +42,17 @@ import { Cordova, IonicNativePlugin, Plugin } from '@ionic-native/core';
 export class HCE extends IonicNativePlugin {
 
   /**
+   * Initialize.
+   * @param onCommand {HCECommandEvent} The event handler.
+   * @param fail {Function} Error event handler.
+   *
+   */
+  @Cordova()
+  initialize(onCommand: HCECommandEvent, fail?: Function): void {
+    return; // We add return; here to avoid any IDE / Compiler errors
+  }
+
+  /**
    * Registers command receiver.
    * @param onCommand {HCECommandEvent} The event handler.
    * @param fail {Function} Error event handler.
